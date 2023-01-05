@@ -1,0 +1,3038 @@
+@charset "utf-8";
+
+body { background: #f3f0ed;}
+h3 {font-family: 'Amiri',serif; font-weight: normal;}
+h4 {font-weight: normal;}
+svg {background: none;}
+.loader {
+    background: #fff;
+}
+.loader svg {
+    height: 100%;
+}
+/* animation */
+@-webkit-keyframes line {
+    0% {width:0}
+    100% {width: 100%}
+}
+@keyframes line {
+    0% {width:0}
+    100% {width: 100%}
+}
+@-webkit-keyframes sr {
+    0% {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+        transform: translateX(20px);
+    }
+}
+@keyframes sr {
+    0% {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+        transform: translateX(20px);
+    }
+}
+#about .title h3.left, .storyInner .title p.left {
+    -webkit-animation: left 1.5s ease;
+    animation: left 1.5s ease; opacity: 1;
+}
+.aboutInner > span:first-of-type.right, .featureInner .panels div h4.right {
+    -webkit-animation: right 1.5s;
+    animation: right 1.5s;
+    opacity: 1;
+}
+#about .title p.up,#about .title a.up, .aboutInner > p.up, .ritualInner h3.up, .aboutInner .pc.up {
+    -webkit-animation: up 1.5s;
+    animation: up 1.5s;
+    opacity: 1;
+}
+.aboutInner > span:last-child.down {
+    -webkit-animation: down 1.5s;
+    animation: down 1.5s;
+    opacity: 1;
+}
+#story > span.op, .storyInner > span.op, .featureInner .panels div > p.op,.featureInner .panels div > span.op {
+    -webkit-animation: op 1s ease;
+    animation: op 1s ease;
+    opacity: 1;
+}
+.featureInner .mobile span.line {
+    -webkit-animation: line 1s ease;
+    animation: line 1s ease;
+    opacity: 1;
+}
+
+/* mobile */
+
+/* header */
+.navWrap {
+    background: #fff; border-bottom: 1px solid #c6a456;
+}
+.navWrap:before, .navWrap:after {
+    display: none;
+}
+h1 {
+    top: 9px;
+    width: 98px; height: 63px; margin-left: -49px;
+}
+
+/* brand story */
+.brand .visual {
+    background-image: url(../img/sabon-brand-visual.jpg);
+    background-size: 1133px 766px;background-position: left -406px bottom -99px;
+}
+.textSvg {
+    position: absolute; top: 179px; left: 50%; margin-left: -144px;
+}
+.visualSvg {
+    position: absolute; top: 301px; left: 0;
+    width: 100%; height: 278px;
+}
+.brand .visual p {
+    position: relative; z-index: 1;
+    padding-top: 389px; margin-bottom: 66px;
+    font-size: 3.3rem;line-height: 1.212;
+    animation: up 2.5s ease;
+}
+.brand .visual p span {
+    opacity: 1;
+}
+.brand .visual p span:first-child {
+    line-height: 0.4;
+}
+.brand .visual p span:first-child, .brand .visual p:nth-of-type(2) span:last-child {
+    display: block;
+    font-size: 3.5rem;
+}
+.brand .visual p span:nth-child(2) {
+    display: block;
+}
+/* brand */
+.sectionWrap {
+    padding: 50px 0 0; overflow-x: hidden;
+}
+/* about */
+#about {
+    position: relative;
+}
+#about .title {
+    position: relative;
+    width: 80.267%; margin: 0 auto 39px;
+}
+#about .title div {
+    position: absolute;
+    width: 80px; height: 80px;
+}
+#about .title h3 {
+    margin-bottom: 53px; margin-left: 100px;
+    color: #c6a456; font-size: 5rem;
+    display: inline-block; width: 188px;
+    line-height: 0.6;
+}
+#about .title h3 span:last-child {
+    display: block;
+    margin-left: 69px;
+    color: #2e261d;
+}
+#about .title p {
+    margin-bottom: 28px;
+    color: #2e261d; font-size: 1.8rem; line-height: 1.25; opacity: 0;
+}
+#about .title a {
+    color: #2e261d;font-size: 1.8rem; 
+}
+#about .title a span {
+    display: inline-block;
+    width: 7px; height: 12px; margin-right: 31px;
+    background: url(../img/sabon-arrow-right-brown.png) no-repeat;
+    background-size: contain;
+}
+.aboutInner > span:first-of-type {
+    display: block;
+    width: 96%; height: 360px; margin-bottom: 62px;
+    background: url(../img/sabon-brand-about-handsoap.jpg) no-repeat; background-size: cover; background-position: center;
+    text-indent: -9999px;
+    -webkit-box-shadow: 15px 15px 0 0 #c6a456;
+    box-shadow: 15px 15px 0 0 #c6a456; 
+}
+.aboutInner > p {
+    width: 80.267%; margin: 0 auto 50px;
+    color: #2e261d; font-size: 1.8rem; line-height: 1.25; opacity: 0;
+}
+.aboutInner > p span {
+    display: block; margin-bottom: 40px;
+    font-size: 2.2rem;
+}
+.aboutInner > span:last-child {
+    display: block;
+    width: 80.267%; height: 300px; margin: 0 auto 58px;
+    background: url(../img/sabon-brand-about-solidsoap.jpg) no-repeat; background-size: cover; background-position: center;
+    text-indent: -9999px; 
+}
+#about .c01 {
+    position: absolute; left: -406px; top: 598px; z-index: -1;
+    width: 694px; height: 694px;
+}
+/* story */
+#story {
+    background: #d9b257; margin-bottom: 55px;
+}
+.storyInner {
+    position: relative;
+    width: 80.267%; margin: 0 auto; padding: 57px 0 55px;
+}
+.storyInner div:first-child {
+    width: 80px; height: 80px; position: absolute; left: 0; top: -37px;
+}
+.storyInner .title {
+    color: #554999; font-size: 2rem; line-height: 1.25;
+}
+#story > span {
+    display: block;
+    width: 100%; height: 201px;
+    background: url(../img/sabon-brand-story.jpg) no-repeat center/cover; 
+    text-indent: -9999px;
+}
+/* ritual */
+#ritual {
+    position: relative;
+    margin-bottom: 56px;
+}
+.ritualInner {
+    position: relative;
+    width: 80.267%; margin: 0 auto;
+}
+.ritualInner > div:first-child {
+    position: absolute; right: 0; top: 0;
+    width: 80px; height: 80px;
+}
+.ritualInner h3 {
+    margin-bottom: 33px;
+    display: block;
+    color: #2e261d; font-size: 3.6rem; line-height: 1.111;
+}
+.ritualInner h3 span:nth-child(2) span {
+    display: block;
+}
+.ritualInner .slide {
+    overflow: hidden; height: 488px;
+}
+.ritualInner .slide div ~div {
+    display: none;
+}
+.ritualInner .slide div > span {
+    display: block;
+    width: 100%; height: 301px;
+    background: url(../img/sabon-brand-ritual-showeroil.jpg) no-repeat center/cover;
+}
+.ritualInner .slide .scrub > span {
+    background-image: url(../img/sabon-brand-ritual-bodyscrub.jpg);
+}
+.ritualInner .slide .lotion > span {
+    background-image: url(../img/sabon-brand-ritual-bodylotion.jpg);
+}
+.ritualInner .slide .ritulText {
+    height: 177px;padding: 17px 5.316% 20px; background: #43C089; 
+}
+.ritualInner .slide .scrub .ritulText {
+    background: #EF843F; 
+}
+.ritualInner .slide .lotion .ritulText {
+    background: #594F98;
+}
+.ritualInner .slide .ritulText h4 {
+    margin-bottom: 22px;
+    color: #fff; font-size: 2rem;
+}
+.ritualInner .slide .ritulText p {
+    color: #fff; font-size: 1.8rem; line-height: 1.25;
+}
+.ritualInner .slide button {
+    position: absolute; left: -9999px; top: -9999px;
+}
+#ritual .c02, #ritual .c03 {
+    position: absolute; z-index: -1;
+}
+#ritual .c02 {
+    width: 546px; height: 546px; left: 50%;bottom: -76px; margin-left: -273px;
+}
+#ritual .c03 {
+    left: -2.933%; bottom: -106px;
+    width: 124px; height: 124px; opacity: 0.3;
+}
+/* feature */
+#feature {
+    position: relative; overflow: hidden;
+}
+#feature .c04 {
+    position: absolute; z-index: -1;
+    right: -104px; bottom: -80px;
+    width: 268px; height: 204px;
+}
+.featureInner {
+    width: 80.267%; margin: 0 auto;
+}
+.featureInner .fnumber {
+    width: 80px; height: 80px; margin: 0 auto 44px;
+}
+.featureInner .panels > div {
+    margin-bottom: 74px;
+}
+.featureInner .panels > div:last-child {
+    margin-bottom: 51px;
+} 
+.featureInner .mobile {
+    display: inline-block; margin-bottom: 26px;
+    color: #554999; font-size: 2.3rem;
+}
+.featureInner .mobile span {
+    display: block; 
+    height: 1px; margin-top: 7px;
+    background: #554999; 
+}
+.featureInner .panels p {
+    margin-bottom: 37px;
+    color: #2e261d; font-size: 1.8rem; line-height: 1.25; 
+}
+.featureInner .panels > div > span {
+    display: block;
+    width: 100%; height: 225px; padding-top: 9px;
+    background: url(../img/sabon-brand-feature-culture.jpg) no-repeat center/cover;
+}
+.featureInner .panels > div:nth-child(2) > span {
+    background-image: url(../img/sabon-brand-feature-approach.jpg);
+}
+.featureInner .panels > div:nth-child(3) > span {
+    background-image: url(../img/sabon-brand-feature-formulas.jpg);
+}
+.featureInner .panels > div > span span {
+    display: block;
+    width: 94.186%; height: 207px; margin: 0 auto; border: 1px solid #fff;
+}
+
+@media screen and (min-width:768px) {
+    
+    .white, .purple, .brown {
+        transform: scale(1);
+    }
+    h1 {
+        width: 106px; height: 67px; margin-left: -53px;
+    }
+    
+    /* brand story */
+    .brand .visual {
+        background-size: 2054px 1388px; background-position: right -454px top;
+    }
+    .textSvg {
+        width: 506px; top: 282px; margin-left: -253px;
+    }
+    .visualSvg {
+        width: 768px; height: 382px; left: 50%; top: 443px; margin-left: -384px;
+    }
+    .brand .visual p {
+        padding-top: 565px;margin-bottom: 110px;
+        font-size: 5.8rem; line-height: 1.207;
+    }
+    .brand .visual p span:first-child, .brand .visual p span:last-child {
+        font-size: 5.8rem;
+    }
+    /* brand */
+    .sectionWrap {
+        padding-top: 64px;
+    }
+    /* about */
+    #about .title {
+        float: right; text-align: right;
+        width: 37.109%; margin: 0 7.813% 0;
+    }
+    #about .title div {
+        left: 20.702%; top: 40px;
+        width: 120px; height: 100px;
+    }
+    #about .title h3 {
+        position: relative; margin-bottom: 105px; margin-left: 0;
+    }
+    #about .title h3 span:first-child {
+        margin-right: 90px;
+    }
+    #about .title h3 span:last-child {
+        margin-left: 0;
+        font-size: 6rem;
+    }
+    #about .title p {
+        margin-bottom: 29px;
+        font-size: 2rem; line-height: 1.3;
+        text-align: left;
+    }
+    #about .title a {
+        font-size: 2rem;float: left;
+    }
+    #about .title a:hover {
+        color: #554999;
+    }
+    #about .title a span {
+        margin-right: 25px;
+    }
+    #about .title a:hover span {
+        background-image: url(../img/sabon-arrow-right-purple.png);
+        -webkit-animation: sr 1.5s ease infinite;
+        animation: sr 1.5s ease infinite;
+    }
+    .aboutInner > span:first-of-type {
+        float: left; margin-bottom: 74px;
+        width: 46.875%;
+        -webkit-box-shadow: 20px 20px 0 0 #c6a456;
+        box-shadow: 20px 20px 0 0 #c6a456;
+    }
+    .aboutInner > p {
+        clear: both;
+        width: 84.375%; margin-bottom: 51px;
+        font-size: 2rem; line-height: 1.3;
+    }
+    .aboutInner > p span {
+        font-size: 2.4rem;
+    }
+    .aboutInner > span:last-child {
+        width: 84.375%; margin-bottom: 0;
+    }
+    #about .c01 {
+        left: -407px; top: 50px;
+        width: 993px; height: 993px;
+    }
+    /* story */
+    #story {
+        margin-bottom: 52px;
+    }
+    .storyInner {
+        width: 84.375%; padding: 63px 0;
+    }
+    .storyInner div:first-child {
+        position: static; float: left;
+        margin-right: 43px; width: 120px; height: 100px;
+    }
+    .storyInner .title {
+        font-size: 2.4rem; line-height: 1.25;
+    }
+    #story > span {
+        height: 440px;
+    }
+    /* ritual */
+    #ritual {
+        margin-bottom: 65px;
+    }
+    .ritualInner {
+        width: 84.375%;
+    }
+    .ritualInner > div:first-child {
+        right: 50%; margin-right: -208px;
+        width: 120px; height: 100px;
+    }
+    .ritualInner h3 {
+        width: 416px; margin: 0 auto 20px;
+    }
+    .ritualInner h3 > span:nth-child(2) {
+        font-size: 4.5rem;
+    }
+    .ritualInner .slide {
+        height: 324px;
+    }
+    .ritualInner .slide div > span {
+        float: right; width: 50%;
+        height: 324px;
+    }
+    .ritualInner .slide .ritulText {
+        float: left;width: 50%; height: 324px;
+        padding: 50px 4.255% 0;
+    }
+    .ritualInner .slide .ritulText h4 {
+        margin-bottom: 29px; font-size: 2.4rem;
+    }
+    .ritualInner .slide .ritulText p {
+        font-size: 2rem; line-height: 1.3;
+    }
+    #ritual .c02 {
+        bottom: -191px;
+        width: 612px; height: 612px; margin-left: -306px; 
+    }
+    #ritual .c03 {
+        left: 50%; bottom: -195px;
+        width: 163px; height: 163px; margin-left: -340px;
+    }
+    /* feature */
+    #feature .c04 {
+        right: -22.396%; bottom: -184px;
+        width: 472px; height: 379px;
+    }
+    .featureInner {
+        width: 84.375%;
+    }
+    .featureInner .fnumber {
+        width: 120px; height: 100px;
+    }
+    .featureInner .panels > div  {
+        margin-bottom: 89px;
+    }
+    .featureInner .panels > div:last-child {
+        margin-bottom: 74px;
+    }
+    .featureInner .mobile {
+        font-size: 2.8rem; margin-bottom: 30px;
+    }
+    .featureInner .mobile span {
+        margin-top: 14px;
+    }
+    .featureInner .panels p {
+        margin-bottom: 39px; font-size: 2.4rem; line-height: 1.3;
+    }
+    .featureInner .panels > div > span {
+        height: 486px; padding-top: 18px;
+    }
+    .featureInner .panels > div > span span {
+        height: 450px; border-width: 2px;
+    }
+}
+@media screen and (min-width:1024px) {
+    h1 {
+        top: 7px;
+        width: 110px; height: 70px; margin-left: -55px;
+    }
+    /* brand story */
+    .brand .visual {
+        background-size: 1628px 1100px; background-position: top center;
+    }
+    .textSvg {
+        top: 169px;
+    }
+    .visualSvg {
+        top: 277px;
+        width: 750px; height: 412px; margin-left: -375px;
+    }
+    .brand .visual p {
+        padding-top: 387px; margin-bottom: 69px;
+    }
+    /* brand */
+    .sectionWrap {
+        padding-top: 83px;
+    }
+    /* about */
+    .aboutInner {
+        width: 84.375%; margin: 0 auto;
+    }
+    .aboutInner .pc {
+        display: none;
+    }
+    #about .title {
+        width: 44.676%; margin: 0;
+    }
+    #about .title div {
+        top: 83px; left: 9.845%;
+        width: 160px; height: 130px;
+    }
+    #about .title h3 {
+        margin-bottom: 136px;
+        font-size: 8rem;
+        width: 348px; margin-top: 10px;
+    }
+    #about .title h3 span:first-child  {
+        margin-right: 157px;
+    }
+    #about .title h3 span:last-child  {
+        font-size: 10rem;
+    }
+    #about .title p {
+        margin-bottom: 39px;
+    }
+    .aboutInner > span:first-of-type {
+        width: 46.296%; height: 400px; margin-bottom: 92px;
+    }
+    .aboutInner > p {
+        float: left;
+        width: 43.287%; margin-left: 3.125%; margin-bottom: 0;
+    }
+    .aboutInner > p span {
+        margin-bottom: 50px;
+    }
+    .aboutInner > span:last-child {
+        float: right;
+        width: 339px; height: 406px; margin-top: 30px; margin-right: 4.977%;
+    }
+    #about .c01 {
+        top: 261px; left: -156px;
+        width: 972px; height: 972px;
+    }
+    /* story */
+    #story {
+        margin-bottom: 0;
+    }
+    .storyInner {
+        padding: 75px 0 83px;
+    }
+    .storyInner > span {
+        display: none;
+    }
+    .storyInner div:first-child {
+        width: 160px; height: 130px;margin-right: 53px;
+    }
+    .storyInner .title {
+        font-size: 3rem; line-height: 1.333;
+    }
+    .storyInner .title p:first-child {
+        margin-bottom: 60px;
+    }
+    .storyInner .title p.pc {
+        color: #fff; font-size: 2rem; line-height: 1.3;
+    }
+    #story > span {
+        height: 547px;
+    }
+    /* ritual */
+    #ritual {
+        margin-bottom: 67px;
+    }
+    #ritual span.pc {
+        position:absolute; left: 0; top: 0;
+        display: block;
+        width: 68.945%; height: 446px;
+        background: #d9b257; 
+    }
+    .ritualInner > div:first-child {
+        top: 43px; right: 0; 
+        margin-right: 0; width: 160px; height: 130px;
+    }
+    .ritualInner h3 {
+        position: relative;z-index: 1;
+        width: auto; margin: 0 123px 0 0; padding-top: 86px; 
+        text-align: right;
+    }
+    .ritualInner h3 > span:nth-child(2) {
+        font-size: 6rem; line-height: 1.083;
+    }
+    .ritualInner .slide {
+        background: none;
+        height: 460px; margin-top: -90px;
+    }
+    .ritualInner .slide div > span {
+        height: 432px; margin-top: 60px;
+    }
+    .ritualInner .slide .ritulText {
+        height: 400px; padding: 50px 10.764% 0 30px; 
+    }
+    .ritualInner .slide .ritulText h4 {
+        margin-bottom: 52px;
+    }
+    .ritualInner .slide .ritulText p {
+        margin-bottom: 60px;
+    }
+    .ritualInner .slide .ritulText a {
+        color: #fff; font-size: 2rem;
+    }
+    .ritualInner .slide .ritulText a:hover {
+        color: #554999; transition: color 0.4s;
+    }
+    .ritualInner .slide .ritulText a:hover span {
+        background-image: url(../img/sabon-arrow-right-purple.png);
+        -webkit-animation: sr 1s ease infinite;
+        animation: sr 1s ease infinite;
+    }
+    .ritualInner .slide .lotion .ritulText a:hover {
+        color: #d9b257;
+    }
+    .ritualInner .slide .ritulText a span {
+        display: inline-block;
+        width: 8px;height: 14px; margin-right: 35px;
+        background: url(../img/sabon-arrow-right-white.png) no-repeat center/contain;
+    }
+    .ritualInner .slide .lotion .ritulText a:hover span {
+        background-image: url(../img/sabon-arrow-right-gold.png);
+    }
+    #ritual .c02 {
+        bottom: -276px;
+        width: 884px; height: 884px; margin-left: -442px;
+    }
+    #ritual .c03 {
+        bottom: -277px;
+        width: 236px; height: 236px; margin-left: -488px;
+    }
+    /* feature */
+    #feature .c04 {
+        right: -191px; bottom: -167px;
+        width: 537px; height: 408px;
+    }
+    #feature .c04 .purple {
+        cx: 90; cy:240; r:82;
+    }
+    .featureInner .fnumber {
+        width: 160px; height: 130px;margin-bottom: 74px;
+    }
+    .featureInner .tabs {
+        margin-bottom: 72px;
+        text-align: center;
+    }
+    .featureInner .tabs a {
+        color: #c6a456; font-size: 3rem;
+    }
+    .featureInner .tabs a.on {
+        color: #554999; 
+        -webkit-transition: color 0.4s;
+        -o-transition: color 0.4s;
+        transition: color 0.4s;
+    }
+    .featureInner .tabs a:after {
+        content: "|"; padding: 0 30px; font-size: 3rem;
+    }
+    .featureInner .tabs a.on:after {
+        color: #c6a456;
+    }
+    .featureInner .tabs a:last-child:after {
+        content: ""; padding: 0;
+    }
+    .featureInner .panels {
+        position: relative;
+        height: 380px;margin-bottom: 80px;
+    }
+    .featureInner .panels > div ~ div {
+        display: none;
+    }
+    .featureInner .panels > div {
+        margin-bottom: 0px;
+    }
+    .featureInner .panels > div:last-child {
+        margin-bottom: 0px;
+    }
+    .featureInner .mobile {
+        display: none;
+    }
+    .featureInner .panels div div {
+        float: right; width: 45.255%;
+    }
+    .featureInner .panels .pc {
+        margin-bottom: 37px;
+    }
+    .featureInner .panels p {
+        margin-bottom: 0;
+    }
+    .featureInner .panels p:nth-of-type(2) {
+       font-size: 2rem;
+    }
+    .featureInner .panels > div > span {
+        float: left;
+        width: 50%; height: 324px; padding-top: 12px;
+    }
+    .featureInner .panels > div > span span {
+        height: 300px;
+    }
+}
+@media screen and (min-width:1280px) {
+    h1 {
+        top: 6px;
+        width: 114px; height: 72px; margin-left: -57px;
+    }
+    /* brand story */
+    .brand .visual {
+        background-size: cover;
+    }
+    .textSvg {
+        width: 682px; top: 258px; margin-left: -341px;
+    }
+    .visualSvg {
+        top: 384px;
+        width: 850px; height: 502px; margin-left: -425px;
+    }
+    .brand .visual p {
+        width: auto; ;margin: 0;
+        text-align: center;
+        padding-top: 507px; margin-bottom: 78px;
+        font-size: 7.6rem; line-height: 1.211;
+    }
+    /* brand */
+    .sectionWrap {
+        padding-top: 113px;
+    }
+    /* about */
+    .aboutInner {
+        position: relative;
+        width: 1280px;
+    }
+    #about .title {
+        width: 486px; margin-top: 93px; margin-right: 95px;
+    }
+    #about .title div {
+        top: 340px; left: -70px;
+        width: 210px; height: 180px;
+    }
+    #about .title h3 {
+        margin-bottom: 0;
+        font-size: 11rem;
+        position: absolute; top: 246px; left: -87px;
+        width: 455px; margin-top: 0;
+    }
+    #about .title h3 span:first-child {
+        margin-right: 190px;
+    }
+    #about .title h3 span:last-child {
+        font-size: 12rem;
+    }
+    #about .title p  {
+        margin-bottom: 24px;
+        font-size: 2.4rem;
+    }
+    #about .title a {
+        font-size: 2.4rem;
+    }
+    #about .title a span {
+        width: 9px; height: 15px; margin-right: 18px;
+    }
+    .aboutInner > span:first-of-type {
+        width: 520px; height: 520px; margin-bottom: 97px;
+    }
+    .aboutInner .pc {
+        display: block; position: absolute; top: 450px; left: 1180px;
+        width: 420px; height: 404px;
+        background: url(../img/sabon-brand-about-bodyscrub.jpg) no-repeat center/cover; text-indent: -9999px; opacity: 0;
+    }
+    .aboutInner > p {
+        width: 467px; margin-left: 75px;
+        font-size: 2.4rem; line-height: 1.25;
+    }
+    .aboutInner > p span {
+        font-size: 3.5rem; margin-bottom: 58px;
+    }
+    .aboutInner > span:last-child {
+        margin-top: 90px; margin-right: 212px;
+    }
+    #about .c01 {
+        top: 139px; left: 50%;
+        width: 1388px; height: 1388px; margin-left: -1210px;
+    }
+    /* story */
+    #story {
+        background: none; 
+    }
+    .storyInner {
+        width: 1280px; height: 1464px; padding: 0;
+    }
+    .storyInner div:first-child {
+        width: 210px; height: 180px; margin-top: 202px;
+    }
+    .storyInner .title {
+        position: absolute; top: 0; left: 333px;
+        width: 1268px; padding: 118px 320px 100px 183px;
+        background: #d9b257;
+        font-size: 3.6rem;
+    }
+    .storyInner .title span.pc {
+        display: block;  clear: both;
+        width: 1600px; height: 850px;
+        background: url(../img/sabon-brand-story.jpg) no-repeat center/cover;
+    }
+    .storyInner > span {
+        display: block; position: absolute; left: 0; bottom: 0;
+        width: 1600px;height: 855px;
+        background: url(../img/sabon-brand-story.jpg) no-repeat center/cover; text-indent: -9999px;
+    }
+    #story > span {
+        display: none;
+    }
+    .storyInner .title p:first-child  {
+        margin-bottom: 70px;
+    }
+    .storyInner .title p.pc {
+        font-size: 2.4rem; line-height: 1.25;
+    }
+    /* ritual */
+    #ritual {
+        margin-bottom: 126px;
+    }
+    #ritual span.pc {
+        left: 50%;
+        width: 1280px; height: 950px; margin-left: -960px;
+    }
+    .ritualInner {
+        width: 1280px;
+    }
+    .ritualInner > div:first-child {
+        top: 60px;
+        width: 210px; height: 180px;
+    }
+    .ritualInner h3 {
+        padding-top: 72px;margin-right: 150px; padding-top: 79px;
+    }
+    .ritualInner h3 > span:nth-child(2)  {
+        font-size: 8rem; line-height: 1.188;
+    }
+    .ritualInner .slide {
+        height: 690px;
+    }
+    .ritualInner .slide div > span {
+        width: 640px; height: 640px; margin-top: 50px;
+    }
+    .ritualInner .slide .ritulText {
+        height: 550px;padding-right: 126px;
+    }
+    .ritualInner .slide .ritulText h4 {
+        margin-bottom: 69px;
+        font-size: 3.6rem;
+    }
+    .ritualInner .slide .ritulText p {
+        margin-bottom: 101px;
+        font-size: 3rem; line-height: 1.167;
+    }
+    .ritualInner .slide .ritulText a {
+        font-size: 3rem;
+    }
+    .ritualInner .slide .ritulText a span {
+        width: 12px; height: 22px; margin-right: 31px;
+    }
+    #ritual .c02 {
+        bottom: -368px;
+        width: 1260px; height: 1260px; margin-left: -630px;
+    }
+    #ritual .c03 {
+        bottom: -376px;
+        width: 336px; height: 336px; margin-left: -723px;
+    }
+    /* feature */
+    #feature .c04 {
+        right: -55px; bottom: -133px;
+        width: 537px; height: 408px;
+    }
+    .featureInner {
+        width: 1280px;
+    }
+    .featureInner .fnumber {
+        width: 210px; height: 180px;margin-bottom: 70px;
+    }
+    .featureInner .tabs {
+        margin-bottom: 104px;
+    }
+    .featureInner .tabs a {
+        font-size: 3.6rem;
+    }
+    .featureInner .tabs a:after {
+        padding: 0 45px;
+        font-size: 3.6rem;
+    }
+    .featureInner .panels {
+        margin-bottom: 132px; height: 480px;
+    }
+    .featureInner .panels div div {
+        width: 580px;
+    }
+    .featureInner .panels .pc {
+        margin-bottom: 64px;
+        font-size: 2.8rem;
+    }
+    .featureInner .panels p:nth-of-type(2) {
+        font-size: 2.4rem; line-height: 1.25;
+    }
+    .featureInner .panels > div > span {
+        height: 480px; padding-top: 18px;
+    }
+    .featureInner .panels > div > span span {
+        height: 444px;
+    }
+}
+
+/* product */
+
+/* animation */
+@keyframes fill {
+    0% {
+        opacity: 1;
+        fill:none;
+    }
+    15% {
+        opacity: 1;
+        fill: rgba(46,38,29,0);
+    }
+    30% {
+        opacity: 1;
+        fill: rgba(46,38,29,0.1);
+    }
+    50% {
+        opacity: 1;
+        fill: rgba(46,38,29,0.4);
+    }
+    80% {
+        opacity: 1;
+        fill: rgba(46,38,29,0.8);
+    }
+    100% {
+        opacity: 1;
+        fill: rgba(46,38,29,1);
+    }
+}
+@keyframes fillw {
+    0% {
+        opacity: 1;
+        fill:none;
+    }
+    15% {
+        opacity: 1;
+        fill: rgba(255,255,255,0);
+    }
+    30% {
+        opacity: 1;
+        fill: rgba(255,255,255,0);
+    }
+    40% {
+        opacity: 1;
+        fill: rgba(255,255,255,0);
+    }
+    50% {
+        opacity: 1;
+        fill: rgba(255,255,255,0);
+    }
+    65% {
+        opacity: 1;
+        fill: rgba(255,255,255,0.1);
+    }
+    70% {
+        opacity: 1;
+        fill: rgba(255,255,255,0.4);
+    }
+    80% {
+        opacity: 1;
+        fill: rgba(255,255,255,0.8);
+    }
+    100% {
+        opacity: 1;
+        fill: rgba(255,255,255,1);
+    }
+}
+.p1 {
+    stroke: #2E261D;
+    fill: none;
+    stroke-width: 0.5;
+}
+.p1.fill {
+    animation: fill 1s;
+    fill:#2E261D;
+}
+.p2 {
+    stroke: #fff;
+    fill: none;
+    stroke-width: 0.5;
+}
+.p2.fill {
+    animation: fillw 1s;
+    fill: #fff;
+}
+.p3 {
+    stroke: #fff;
+    fill: none;
+    stroke-width: 0.5;
+}
+.p3.fill {
+    animation: fillw 1s;
+    fill: #fff;
+}
+.bodyInner div:nth-of-type(3).up, .bodyInner div:nth-of-type(4).up, .bodyInner div:nth-of-type(5).up, .bodyInner div:nth-of-type(6).up,.hairInner div:nth-of-type(2).up,  .hairInner div:nth-of-type(3).up, .hairInner div:nth-of-type(4).up, .hairInner div:nth-of-type(5).up {
+    -webkit-animation: up 1.5s;
+    animation: up 1.5s;
+    opacity: 1;
+}
+.bodyInner p.right, .scentInner iframe.right {
+    -webkit-animation: right 1.5s;
+    animation: right 1.5s;
+    opacity: 1;
+}
+.hairInner div:nth-of-type(1).left {
+    -webkit-animation: left 1.5s ease;
+    animation: left 1.5s ease; opacity: 1;
+}
+.bodyInner div:nth-of-type(1),.bodyInner div:nth-of-type(2).op,.bodyInner div:nth-of-type(3).op, .bodyInner div:nth-of-type(4).op, .bodyInner div:nth-of-type(5).op, .bodyInner div:nth-of-type(6).op,.hairInner div:nth-of-type(2).op,  .hairInner div:nth-of-type(3).op, .hairInner div:nth-of-type(4).op, .hairInner div:nth-of-type(5).op,.scentInner div:nth-of-type(1).op, .scentInner div:nth-of-type(2).op, .scentInner div:nth-of-type(3).op, .scentInner div:nth-of-type(4).op, .scentInner div:nth-of-type(5).op, .scentInner div:nth-of-type(6).op {
+    -webkit-animation: op 1s ease;
+    animation: op 1s ease;
+    opacity: 1;
+}
+
+/* common */
+.product svg {
+    height: 100%;
+}
+.product .sectionWrap {
+    margin-top: 80px; overflow-y: hidden; padding-top: 0;
+}
+.product section {
+    position: relative; padding-bottom: 50px;
+}
+.product section > span {
+    position: absolute; right: 0;top: 0;
+    width: 150px; height: 299px; background: #d9b257;
+}
+.product .title {
+    position: relative;
+    width: 100%; height: 150px;
+    background: url(../img/sabon-product-body-bg.jpg) no-repeat;background-size: cover; background-position: right top;
+}
+.product .title div {
+    position: absolute;
+    left: 9.867%; top: 82px;
+    width: 256px; height: 50px;
+}
+.product .pd {
+    width: 80.267%; margin: 0 auto; padding-top: 50px;
+}
+.pd div {
+    position: relative;
+    width: 100%; height: 256px;margin-bottom: 26px;
+    background: rgba(217,178,87,.5);
+}
+.pd div:last-child {
+    margin-bottom: 0;
+}
+.pd a {
+    position: relative;
+    display: block; 
+    height: 100%; padding-top: 3px;
+    text-align: center;transition: 0.4s ease;
+}
+.pd a > span:first-child {
+    display: block;
+    width: 98%; height: 203px; padding-top: 5px; margin: 0 auto; 
+    background: #fff;
+}
+.pd a img {
+    height: 193px;
+}
+.pd a > span:last-child {
+    position: absolute; left: 0; bottom: 0;
+    display: block;
+    width: 100%;height: 50px; 
+    background: #d9b257; line-height: 50px; color: #fff; font-size: 2rem;
+}
+.pd a .mobile {
+    display: inline-block;
+    width: 7px; height: 12px; margin-left: 15px;
+    background: url(../img/sabon-arrow-right-white.png) no-repeat; background-size: contain;
+}
+iframe {
+    border: none;
+}
+
+/* mobile */
+
+/* body */
+#body .title div {
+    width: 165px;
+}
+.bodyInner div:nth-of-type(3), .bodyInner div:nth-of-type(4) {
+    background: rgba(85,73,153,.5);
+}
+.bodyInner div:nth-of-type(3) a > span:last-child, .bodyInner div:nth-of-type(4) a > span:last-child {
+    background: #554999;
+}
+.bodyInner p {
+    width: 100%; padding: 25px 6.312% 15px; margin-bottom: 26px;
+    background: #d9b257; color: #2e261d; font-size: 2.2rem; line-height: 1.182;
+}
+.bodyInner p span {
+    display: block; 
+    color: #fff;text-align: center; font-size: 4rem; line-height: 0.5;
+}
+.bodyInner p span:last-child {
+    margin-top: 20px;
+}
+
+/* hair */
+#hair > span {
+    left: 0;
+}
+#hair .title {
+    background-image: url(../img/sabon-product-hair-bg.jpg);
+}
+#hair .title div {
+    left: auto; right: 9.867%;
+    width: 150px;
+}
+.hairInner div:first-child {
+    height: auto;
+    background: none; 
+}
+.hairInner iframe {
+    width: 100%; height: 169px;
+}
+.hairInner div:first-child p {
+    padding: 25px 6.312% 15px; margin-top: -2px;
+    background: #d9b257;color: #2e261d; font-size: 2.2rem; line-height: 1.182;
+}
+.hairInner div:first-child p span {
+    display: block;
+    color: #fff;text-align: center; font-size: 4rem; line-height: 0.5;
+}
+.hairInner div:first-child p span:last-child {
+    margin-top: 20px;
+}
+.hairInner div:nth-child(3), .hairInner div:nth-child(5) {
+    background: rgba(85,73,153,.5);
+}
+.hairInner div:nth-child(3) a > span:last-child, .hairInner div:nth-child(5) a > span:last-child {
+    background: #554999;
+}
+
+/* scent */
+#scent .title {
+    background-image: url(../img/sabon-product-scent-bg.jpg); background-position: left top;
+}
+#scent .title div {
+    width: 197px;
+}
+.scentInner iframe {
+    width: 100%; height: 169px; margin-bottom: 26px;
+}
+.scentInner div:nth-of-type(4) {
+    height: 100px; background: #554999;
+}
+.scentInner div:nth-of-type(4) a {
+    padding: 24px 0 0 6.312%; text-align: left;
+    color: #fff; font-size: 2.2rem;
+}
+.scentInner div:nth-of-type(4) a > span:first-child{
+    display:block;
+    width: 180px; height: auto; margin: 0; padding: 0;
+    background: none; line-height: 1.182;
+}
+.scentInner div:nth-of-type(4) .mobile {
+    position: absolute; top: 50%; right: 28px;
+    width: 17px; height: 30px; margin-top: -15px;
+}
+.scentInner div:nth-of-type(4) .pc {
+    display: none;
+}
+.scentInner div:nth-of-type(1), .scentInner div:nth-of-type(3), .scentInner div:nth-of-type(5) {
+    background: rgba(85,73,153,.5);
+}
+.scentInner div:nth-of-type(1) a > span:last-child, .scentInner div:nth-of-type(3) a > span:last-child, .scentInner div:nth-of-type(5) a > span:last-child {
+    background: #554999;
+}
+@media screen and (min-width:768px) {
+    .product section {
+        padding-bottom: 80px;
+    }
+    .product section > span {
+        width: 300px; height: 462px;
+    }
+    .product .title {
+        height: 222px;
+    }
+    .product .title div {
+        left: 7.813%; top: 87px;
+        width: 280px; height: 110px;
+    }
+    .product .pd {
+        width: 84.375%; padding-top: 62px;
+    }
+    .pd div {
+        float: left;
+        width: 48.457%; height: 328px; margin-right: 3.086%; margin-bottom: 20px;
+        transition: 0.4s ease;
+    }
+    .pd div:hover{
+       background: #d9b257;
+    }
+    .pd div a > span:first-child:before {
+        position: absolute; left: 50%;top: 3px; z-index: 1;
+        content: ""; display: block;
+        width: 98%; height: 322px; margin-left: -49%;
+        transition: 0.4s ease;
+    }
+    .pd div:hover a > span:first-child:before {
+        background: rgba(0,0,0,.5);
+    }
+    .pd div a:after {
+        content: ""; display: block; position: absolute; left: 50%; top: 50%;z-index: 1;
+        width: 130px; height: 40px; margin-top: -20px; margin-left: -65px;
+        color: #fff; font-size: 2.4rem; line-height: 40px;
+        transition: 0.4s ease;
+    }
+    .pd div:hover a:after {
+        content: "View All"; 
+        background: #d9b257; 
+    }
+    .pd div:nth-last-child(2) {
+        margin-bottom: 0;
+    }
+    .pd a > span:first-child {
+        height: 322px; padding-top: 21px;
+    }
+    .pd a img {
+        height: 280px;
+    }
+    .pd a > span:last-child {
+        width: auto; height: auto; padding:  7px 10px;
+        font-size: 2.2rem; line-height: 1;
+    }
+    .pd a .mobile {
+        display: none;
+    }
+    /* body */
+    #body .title div {
+        width: 363px;
+    }
+    .bodyInner div:nth-of-type(3):hover, .bodyInner div:nth-of-type(4):hover, .bodyInner div:nth-of-type(3):hover a:after, .bodyInner div:nth-of-type(4):hover a:after {
+        background: #554999;
+    }
+    .bodyInner div:nth-of-type(2), .bodyInner div:nth-of-type(4), .bodyInner div:nth-of-type(6) {
+        margin-right: 0;
+    }
+    .bodyInner p {
+        clear: both;
+        padding: 30px 5.401%; margin-bottom: 20px;
+        font-size: 2.4rem; line-height: 1.3;
+    }
+    .bodyInner p span {
+        display: inline; font-size: 3.2rem;
+    }
+    .bodyInner p span:last-child {
+        margin-top: 0; line-height: 0.3;
+    }
+    /* hair */
+    #hair .title div {
+        right: 7.813%;
+        width: 325px;
+    }
+    .hairInner div:first-child {
+        width: 100%;
+    }
+    .hairInner iframe {
+        height: 365px;
+    }
+    .hairInner div:first-child p {
+        padding: 30px 5.401%;
+        font-size: 2.4rem; line-height: 1.3;
+    }
+    .hairInner div:first-child p span {
+        display: inline;font-size: 3.2rem;
+    }
+    .hairInner div:first-child p span:last-child {
+        margin-top: 0;
+    }
+    .hairInner div:nth-child(3), .hairInner div:nth-child(5) {
+        margin-right: 0;
+    }
+    .hairInner div:nth-child(3):hover, .hairInner div:nth-child(5):hover, .hairInner div:nth-child(3):hover a:after, .hairInner div:nth-child(5):hover a:after {
+        background: #554999;
+    }
+    
+    /* scent */
+    #scent .title div {
+        width: 433px;
+    }
+    .scentInner iframe {
+        height: 365px;margin-bottom: 20px;
+    }
+    .scentInner div:nth-of-type(2), .scentInner div:nth-of-type(4), .scentInner div:nth-of-type(6) {
+        margin-right: 0;
+    }
+    .scentInner div:nth-of-type(4) {
+        height: 328px; background: rgba(85,73,153,.7);
+    }
+    .scentInner div:nth-of-type(4):hover {
+        background: #554999;
+    }
+    .scentInner div:nth-of-type(4):hover a:after {
+        display: none;
+    }
+    .scentInner div:nth-of-type(4) a {
+        padding: 114px 0 0;
+        text-align: center; font-size: 2.4rem;
+    }
+    .scentInner div:nth-of-type(4) a > span:first-child {
+        width: 165px; margin: 0 auto 36px;
+    }
+    .scentInner div:nth-of-type(4) a > span:first-child:before {
+        display: none;
+    }
+    .scentInner div:nth-of-type(4) .pc {
+        display: inline-block; position: static;
+        padding: 0;
+        background: none; font-size: 2.4rem;
+    }
+    .scentInner div:nth-of-type(4) .pc span {
+        display: inline-block;
+        width: 8px; height: 14px; margin-right: 18px;
+        background: url(../img/sabon-arrow-right-white.png) no-repeat; background-size: contain;
+    }
+    .scentInner div:nth-of-type(1):hover, .scentInner div:nth-of-type(3):hover, .scentInner div:nth-of-type(5):hover, .scentInner div:nth-of-type(1):hover a:after, .scentInner div:nth-of-type(3):hover a:after, .scentInner div:nth-of-type(5):hover a:after {
+        background:#554999;
+    }
+}
+@media screen and (min-width:1024px) {
+    .product section {
+        padding-bottom: 73px;
+    }
+    .product section > span {
+        height: 683px;
+    }
+    .pd div {
+        width: 31.944%; height: 289px; margin-right: 2.083%; margin-bottom: 18px;
+    }
+    .pd div a > span:first-child:before {
+        height: 283px;
+    }
+    .pd div:nth-last-child(3) {
+        margin-bottom: 0;
+    }
+    .pd a > span:first-child {
+        height: 283px; padding-top: 24px;
+    }
+    .pd a img {
+        height: 235px;
+    }
+    /* body */
+    .bodyInner div:nth-of-type(2), .bodyInner div:nth-of-type(4) {
+        margin-right: 2.083%;
+    }
+    .bodyInner div:nth-of-type(3) {
+        height: 453px; margin-top: -307px; margin-right: 0;
+    }
+    .bodyInner div:nth-of-type(3) a > span:first-child {
+        height: 447px; padding-top: 23px;
+    }
+    .bodyInner div:nth-of-type(3) img {
+        height: 401px;
+    }
+    .bodyInner div:nth-of-type(3) a > span:first-child:before {
+        height: 447px;
+    }
+    .bodyInner p {
+        float: left;
+        width: 65.972%; height: 146px; margin-right: 2.083%; margin-bottom: 18px; padding: 30px 5.263%;
+    }
+    /* hair */
+    .hairInner div:first-child {
+        float: right;
+        width: 65.972%; margin-right: 0; 
+    }
+    .hairInner iframe {
+        height: 321px;
+    }
+    .hairInner div:first-child p {
+        height: 108px; padding: 23px 5.263%;
+    }
+    .hairInner div:nth-child(2) {
+        height: 428px;
+    }
+    .hairInner div:nth-child(2) a > span:first-child {
+        height: 423px; padding-top: 23px;
+    }
+    .hairInner div:nth-child(2) img {
+        height: 377px;
+    }
+    .hairInner div:nth-child(2) a > span:first-child:before {
+        height: 423px;
+    }
+    .hairInner div:nth-child(3) {
+        margin-right: 2.083%;
+    }
+    /* scent */
+    .scentInner iframe {
+        float: left;
+        width: 65.972%; height: 320px;margin-right: 2.083%; margin-bottom: 18px;
+    }
+    .scentInner div:nth-of-type(2), .scentInner div:nth-of-type(4) {
+        margin-right: 2.083%;
+    }
+    .scentInner div:nth-of-type(3) {
+        height: 433px; margin-top: -113px;margin-right: 0;
+    }
+    .scentInner div:nth-of-type(3)  a > span:first-child {
+        height: 427px; padding-top: 23px;
+    }
+    .scentInner div:nth-of-type(3) img {
+        height: 381px;
+    }
+    .scentInner div:nth-of-type(3) a > span:first-child:before {
+        height: 427px;
+    }
+    .scentInner div:nth-of-type(4) {
+        height: 289px;
+    }
+    .scentInner div:nth-of-type(4) a {
+        padding-top: 96px;
+    }
+}
+@media screen and (min-width:1280px) {
+    .product section {
+        padding-bottom: 80px;
+    }
+    .product section > span {
+        right: 50%; margin-right: -960px;
+        width: 600px; height: 884px;
+    }
+    .product .title {
+        height: 415px; background-position: center; background-size: auto;
+    }
+    .product .title div {
+        left: 50%; top: 143px; margin-left: -640px;
+        width: 408px; height: 276px;
+    }
+    .product .pd {
+        width: 1280px; padding-top: 64px;
+    }
+    .pd div {
+        width: 410px; height: 410px; margin-right: 25px; margin-bottom: 25px;
+    }
+    .pd a {
+        padding-top: 5px;
+    }
+    .pd div a > span:first-child:before {
+        left: 5px; top: 5px;
+        width: 400px; height: 400px; margin-left: 0;
+    }
+    .pd a > span:first-child {
+        width: 400px; height: 400px; padding-top: 35px;
+    }
+    .pd a img {
+        height: 330px;
+    }
+    .pd a > span:last-child {
+        font-size: 2.4rem; padding: 11px;
+    }
+    /* body */
+    #body .title div {
+        width: 528px;
+    }
+    .bodyInner div:nth-of-type(2), .bodyInner div:nth-of-type(4) {
+        margin-right: 25px;
+    }
+    .bodyInner div:nth-of-type(3) {
+        height: 643px; margin-top: -435px;
+    }
+    .bodyInner div:nth-of-type(3) a > span:first-child {
+        height: 633px; padding-top: 35px;
+    }
+    .bodyInner div:nth-of-type(3) img {
+        height: 563px;
+    }
+    .bodyInner div:nth-of-type(3) a > span:first-child:before {
+        height: 633px;
+    }
+    .bodyInner p  {
+        width: 845px; height: 208px; padding: 47px 52px; margin-right: 25px;
+        font-size: 3rem; line-height: 1.333;
+    }
+    .bodyInner p span {
+        font-size: 4rem;
+    }
+    /* hair */
+    #hair > span {
+        left: 50%; margin-left: -960px;
+    }
+    #hair .title div {
+        right: 50%;
+        width: 473px; margin-right: -640px;
+    }
+    .hairInner div:first-child {
+        width: 845px;
+    }
+    .hairInner iframe {
+        height: 475px;
+    }
+    .hairInner div:first-child p {
+        height: 162px; padding: 44px 49px;
+        font-size: 3rem; line-height: 1.333;
+    }
+    .hairInner div:first-child p span {
+        font-size: 4rem;
+    }
+    .hairInner div:nth-child(2) {
+        height: 636px;
+    }
+    .hairInner div:nth-child(2) a > span:first-child {
+        height: 627px; padding-top: 35px;
+    }
+    .hairInner div:nth-child(2) img {
+        height: 557px;
+    }
+    .hairInner div:nth-child(2) a > span:first-child:before {
+        height: 627px;
+    }
+    .hairInner div:nth-child(3) {
+        margin-right: 25px;
+    }
+    /* scent */
+    #scent .title div {
+        width: 630px;
+    }
+    .scentInner iframe {
+        width: 845px; height: 475px; margin-right: 25px; margin-bottom: 25px;
+    }
+    .scentInner div:nth-of-type(2), .scentInner div:nth-of-type(4) {
+        margin-right: 25px;
+    }
+    .scentInner div:nth-of-type(3) {
+        height: 643px; margin-top: -168px;
+    }
+    .scentInner div:nth-of-type(3)  a > span:first-child {
+        height: 633px; padding-top: 35px;
+    }
+    .scentInner div:nth-of-type(3) img {
+        height: 563px;
+    }
+    .scentInner div:nth-of-type(3) a > span:first-child:before {
+        height: 633px;
+    }
+    .scentInner div:nth-of-type(4) {
+        height: 410px;
+    }
+    .scentInner div:nth-of-type(4) a {
+        padding-top: 138px; font-size: 3rem;
+    }
+    .scentInner div:nth-of-type(4) a > span:first-child {
+        width: 250px; margin-bottom: 46px;
+    }
+    .scentInner div:nth-of-type(4) .pc {
+        font-size: 2.8rem;
+    }
+    .scentInner div:nth-of-type(4) .pc span {
+        width: 12px; height: 21px; margin-right: 20px;
+    }
+}
+
+/* soap lab */
+
+/* animation */
+@keyframes wd {
+    0% {height:0}
+    100% {height: 100%}
+}
+@keyframes op8 {
+    0% {opacity: 0;}
+    100% {opacity: 0.8;}
+}
+.exInner iframe.left, .bookInner .bookText.left, .customInner h2.left {
+    -webkit-animation: left 1.5s ease;
+    animation: left 1.5s ease; opacity: 1;
+}
+.exInner h2.right, .bookInner h2.right, .select1 h3.right, .select2 h3.right {
+    -webkit-animation: right 1.5s;
+    animation: right 1.5s;
+    opacity: 1;
+}
+.exInner .exText.up, .customInner div:nth-of-type(2).up, fieldset > input.up {
+    -webkit-animation: up 1.5s;
+    animation: up 1.5s;
+    opacity: 1;
+}
+.exInner > span.op, .bookInner > span.op, .table.op, .customInner span.op {
+    -webkit-animation: op 1s ease;
+    animation: op 1s ease;
+    opacity: 1;
+}
+.line {
+    -webkit-animation: line 1s ease;
+    animation: line 1s ease;
+    opacity: 1;
+}
+
+/* lab */
+form, fieldset {
+    border: none; padding: 0; margin: 0;
+}
+.soap .sectionWrap {
+    padding-top: 0; margin-top: 80px; overflow-y: hidden;
+}
+#lab {
+    position: relative; padding-bottom: 105px;
+}
+#lab .labC1 {
+    position: absolute; left: -123px;top: -74px; z-index: -1;
+    width: 362px; height: 362px;
+}
+.labInner {
+    width: 80.267%; margin: 0 auto;
+}
+.labInner h2 {
+    padding-top: 75px; margin-bottom: 60px;
+    color: #c6a456; font-size: 6rem;  font-weight: normal;text-align: center;
+    -webkit-animation: down 1.5s;
+    animation: down 1.5s;
+}
+.labInner > div {
+    position: relative;
+    width: 100%; padding: 10px;
+    background: url(../img/sabon-soaplab-bg.jpg) no-repeat; background-size: cover; background-position: left 50%; text-align: center;
+    -webkit-animation: up 1.5s;
+    animation: up 1.5s;
+}
+.labInner > div > span {
+    position: absolute;
+    display: block; width: 23px; height: 23px; border: 1px solid #fff;
+}
+.labInner > div > span:first-child {
+    left: 0; top: 0;
+     border-left: none; border-top: none;
+}
+.labInner > div > span:nth-child(2) {
+    right: 0; top: 0;
+    border-top: none; border-right: none;
+}
+.labInner > div > span:nth-child(3) {
+    left: 0; bottom: 0;
+    border-bottom: none; border-left: none;
+}
+.labInner > div > span:nth-child(4) {
+    right: 0; bottom: 0;
+    border-bottom: none; border-right: none;
+}
+.labInner > div div {
+    border: 1px solid #fff;
+}
+.labInner div h3 {
+    padding-top: 25px; margin-bottom: 25px;
+    color: #2e261d; font-size: 2rem; 
+}
+.labInner div h3 span {
+    display: block;
+}
+.labInner div p {
+    width: 84.718%; margin: 0 auto; padding-bottom: 24px;
+    font-size: 1.8rem; line-height: 1.25;
+}
+/* experience */
+#experience {
+    position: relative;
+}
+#experience .exC1 {
+    position: absolute; left: 62px; top: 319px; z-index: -2;
+    width: 290px; height: 290px;
+}
+#experience .exC2 {
+    position: absolute; left: 0; top: 449px;z-index: -1;
+    width: 110px; height: 110px;
+}
+#experience .leftbg {
+    position: relative; z-index: -1;
+    width: 36.267%; height: 400px; margin-top: -319px;
+}
+#experience .leftbg span {
+    display: block;
+    width: 100%; height: 100%;
+    background: #d9b257;
+    -webkit-animation: wd 2s ease;
+    animation: wd 2s ease;
+}
+#experience .leftbg .title {
+    position: absolute;right: 20px; bottom: 20px;
+    width: 80px; height: 60px;
+}
+.exInner h2 {
+    margin-left: 9.687%; margin-bottom: 32px; padding-top: 24px;
+    color: #c6a456; font-size: 4rem; font-weight: normal; line-height: 1.125;
+}
+.exInner h2 span {
+    display: block;
+}
+.exInner iframe {
+    width: 100%; height: 210px;border: none; margin-bottom: 42px;
+}
+.exInner .exText {
+    width: 80.267%; margin: 0 auto 38px;
+}
+.exInner .exText p {
+    margin-bottom: 38px;
+    font-size: 1.8rem; line-height: 1.25; color: #2e261d;
+}
+.exInner .exText a {
+    color: #2e261d; font-size: 1.8rem; line-height: 1.25;
+}
+.exInner .exText a span {
+    display: inline-block;
+    width: 7px; height: 12px; margin-right: 12px;
+    background: url(../img/sabon-arrow-right-brown.png) no-repeat center/cover;
+}
+.exInner > span {
+    display: block;
+    width: 100%; height: 250px;
+    background: url(../img/sabon-soaplab-01-lab.jpg) no-repeat; background-size: cover; background-position: center;
+}
+/* book */
+#book {
+    background: #d9b257; padding: 35px 0 50px;
+}
+.bookInner {
+    position: relative;
+    width: 80.267%; margin: 0 auto;
+}
+.bookInner .title {
+    position: absolute; right: 0; top: 0;
+    width: 80px; height: 60px;
+}
+.bookInner h2 {
+    position: relative; z-index: 1;
+    padding-top: 25px; margin-bottom: 39px;
+    color: #fff; font-size: 4rem; font-weight: normal;
+}
+.bookInner > span {
+    display: block;
+    width: 100%; height: 240px;padding-top: 8px; margin-bottom: 34px;
+    background: url(../img/sabon-soaplab-02-lab.jpg) no-repeat; background-size: cover;
+}
+.bookInner > span span {
+    display: block;
+    width: 92.691%; height: 222px; margin: 0 auto; border: 1px solid #fff;
+}
+.bookInner .bookText {
+    margin-bottom: 70px;
+}
+.bookInner .bookText h3 {
+    margin-bottom: 30px;
+    color: #fff; font-size: 2.2rem;
+}
+.bookInner .bookText p {
+    color: #fff; font-size: 1.8rem; line-height: 1.25; 
+}
+.bookInner .bookText p:first-of-type {
+    margin-bottom: 30px;
+}
+.select1 {
+    margin-bottom: 37px;
+}
+.select2 {
+    margin-bottom: 30px;
+}
+.select1 h3, .select2 h3 {
+    margin-bottom: 20px;
+    color: #fff; font-size: 2.2rem;
+}
+.table, .table-head, .row, .cell {
+    display: block; 
+    background: #fff;
+}
+.table-head {
+    position: absolute;
+    top: -9999px; left: -9999px;
+}
+.table .mobile {
+    margin-bottom: 10px;
+    color: #554999; font-size: 1.8rem;
+}
+.table .row {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid #dcd8cf;
+}
+.table .row:last-child {
+    border: none;
+}
+.table label, .table label span {
+    display: block;
+}
+.table .cell {
+    color: #2e261d; font-size: 1.8rem;
+}
+.table label span span:nth-child(2) {
+    display: none;
+}
+.table input {
+    position: absolute; top: 50%; right: 15px; margin-top: -10px;
+    width: 20px; height: 20px;
+}
+fieldset > input {
+    display: block;
+    width: 150px; height: 40px; border-radius: 3px; margin: 0 auto; border: 1px solid #fff;
+    background: none; color: #fff; font-size: 1.8rem; text-align: center; line-height: 40px; cursor: pointer;
+}
+/* custom */
+#custom {
+    position: relative;
+}
+.cuC1 {
+    position: absolute; left: 50%; top: -151px; z-index: -1;
+    width: 302px; height: 302px; margin-left: -151px;
+}
+.cuC2 {
+    position: absolute; left: 50%; top: 72px; z-index: -1;
+    width: 81px; height: 81px; margin-left: -167px;
+}
+.cuC3 {
+    position: absolute; right: -107px; bottom: -128px; z-index: -1;
+    width: 269px; height: 204px;
+}
+.customInner {
+    position: relative;
+    width: 80.267%; margin: 0 auto 47px;
+}
+.customInner .title {
+    position: absolute; left: 0; top: 40px; 
+    width: 80px; height: 60px;
+}
+.customInner h2 {
+    position: relative;z-index: 1;
+    padding-top: 64px; margin-left: 14.95%; margin-bottom: 37px;
+    color: #554999; font-size: 4rem; font-weight: normal; 
+}
+.customInner p {
+    margin-bottom: 30px;
+    color: #2e261d;font-size: 1.8rem; line-height: 1.25;
+}
+.customInner a {
+    display: block; 
+    width: 150px; height: 40px; margin: 0 auto 40px; border-radius: 3px;border: 1px solid #2e261d;
+    color: #2e261d; font-size: 1.8rem; text-align: center; line-height: 40px;
+}
+.customInner span {
+    display: block;
+    width: 100%; height: 157px;
+    background: url(../img/sabon-soaplab-03-bg.jpg) no-repeat; background-size: cover; background-position: center;
+}
+@media screen and (min-width:768px) {
+    .soap .sectionWrap {
+        margin-top: 85px;
+    }
+    #lab {
+        padding-bottom: 163px;
+    }
+    #lab .labC1 {
+        width: 724px; height: 724px; top: -278px; left: -201px;
+    }
+    .labInner {
+        width: 84.375%;
+    }
+    .labInner h2 {
+        padding-top: 109px;margin-bottom: 95px;
+        font-size: 11rem;
+    }
+    .labInner > div > div{
+        width: 100%;
+    }
+    .labInner div h3 {
+        padding-top: 106px; margin-bottom: 75px;
+        font-size: 2.4rem;
+    }
+    .labInner div h3 span {
+        display: inline;
+    }
+    .labInner div p {
+        width: 72.994%; padding-bottom: 102px; font-size: 2rem; 
+    }
+    /* experience */
+    #experience {
+        padding-bottom: 100px;
+    }
+    #experience .exC1 {
+        left: auto; right: -125px; top: 237px;
+        width: 554px; height: 554px;
+    }
+    #experience .exC2 {
+        left: auto; right: 350px; top: 529px;
+        width: 150px; height: 150px;
+    }
+    #experience .leftbg {
+        width: 26.042%; height: 490px; margin-top: -379px;
+    }
+    #experience .leftbg .title {
+        width: 120px; height: 100px; padding-top: 20px;
+    }
+    .exInner {
+        width: 84.375%; margin: -158px auto 0;
+    }
+    .exInner h2 {
+        margin-left: 26.389%; margin-bottom: 66px;
+        font-size: 6rem;
+    }
+    .exInner iframe {
+        height: 364px; margin-bottom: 60px;
+    }
+    .exInner .exText {
+        width: 100%; margin-bottom: 57px;
+    }
+    .exInner .exText p {
+        margin-bottom: 34px;
+        font-size: 2rem; line-height: 1.3;
+    }
+    .exInner .exText a {
+        font-size: 2rem;
+    }
+    .exInner .exText a:hover {
+        color: #554999;
+    } 
+    .exInner .exText a:hover span {
+        background-image: url(../img/sabon-arrow-right-purple.png);
+        -webkit-animation: sr 1.5s ease infinite;
+        animation: sr 1.5s ease infinite;
+    }
+    .exInner .exText a span {
+        width: 8px; height: 14px; margin-right: 25px;
+    }
+    .exInner > span {
+        height: 387px;
+    }
+    /* book */
+    #book {
+        padding: 67px 0 81px;
+    } 
+    .bookInner {
+        width: 84.375%;
+    }
+    .bookInner .title {
+        top: -110px;
+        width: 120px; height: 100px;
+    }
+    .bookInner h2 {
+        padding-top: 0; margin-bottom: 48px;
+        font-size: 6rem;
+    }
+    .bookInner > span {
+        height: 400px; padding-top: 18px; margin-bottom: 43px;
+    }
+    .bookInner > span span {
+        width: 92.593%; height: 364px; 
+    }
+    .bookInner .bookText {
+        margin-bottom: 86px;
+    }
+    .bookInner .bookText h3 {
+        margin-bottom: 36px;
+        font-size: 3rem;
+    }
+    .bookInner .bookText p {
+        font-size: 2rem; line-height: 1.3;
+    }
+    .bookInner .bookText p:first-of-type {
+        margin-bottom: 39px;
+    }
+    .select1 {
+        margin-bottom: 40px;
+    }
+    .select2 {
+        margin-bottom: 65px;
+    }
+    .select1 h3, .select2 h3 {
+        margin-bottom: 25px;
+        font-size: 3rem;
+    }
+    .table .mobile {
+        font-size: 2rem;
+    }
+    .table .row {
+        padding: 10px 11px;
+    }
+    .table .cell {
+        font-size: 2rem;
+    }
+    fieldset > input {
+        width: 180px; height: 48px;
+        font-size: 2rem; line-height: 48px;
+        transition: background, border 0.4s ease;
+    }
+    fieldset > input:hover {
+        border-color: #554999;
+        background: #554999;
+    }
+    /* custom */
+    .cuC1 {
+        top: -303px;
+        width: 606px; height: 606px; margin-left: -303px;
+    }
+    .cuC2 {
+        top: 80px;
+        width: 162px; height: 162px; margin-left: -347px;
+    }
+    .cuC3 {
+        right: -243px; bottom: -247px;
+        width: 537px; height: 408px;
+    }
+    .customInner {
+        width: 84.375%; margin-bottom: 60px;
+    }
+    .customInner .title {
+        position: static; float: left;
+        width: 120px; height: 100px; margin-top: 67px; margin-right: 30px;
+    }
+    .customInner h2 {
+        float: left;
+        margin-left: 0; padding-top: 102px; margin-bottom: 60px;
+        font-size: 6rem;
+    }
+    .customInner div:nth-of-type(2) {
+        clear: both; text-align: right;
+    }
+    .customInner p {
+        margin-bottom: 5px;
+        font-size: 2rem; line-height: 1.3;text-align: left;
+    }
+    .customInner a {
+        display: inline-block;
+        width: 180px; height: 48px; margin: 15px 0 30px;
+        font-size: 2rem; line-height: 48px;
+        transition: 0.4s ease;
+    }
+    .customInner a:hover {
+        border-color: #554999;
+        background: #554999; color: #fff;
+    }
+    .customInner span {
+        height: 271px;
+    }
+}
+@media screen and (min-width:1024px){
+    #lab {
+        padding-bottom: 196px;
+    }
+    #lab .pc {
+        position: absolute; top: 0; right: 0;
+        display: block;
+        width: 300px; height: 683px;
+        background: url(../img/sabon-soaplab-right-bg.jpg) no-repeat; background-size: cover; background-position: center; opacity: 0.8;
+        -webkit-animation: op8 0.6s ease;
+        animation: op8 0.6s ease;
+        transition: 0.3s;
+    }
+    .labInner h2 {
+        padding-top: 125px; margin-bottom: 62px; text-align: left;
+    }
+    .labInner > div {
+        padding: 13px;
+    }
+    .labInner > div > span {
+        width: 30px; height: 30px;
+    }
+    .labInner div h3 {
+        padding-top: 42px; margin-bottom: 38px;
+    }
+    .labInner div p { 
+        width: 86.227%; padding-bottom: 40px; text-align: left;
+    }
+    /* experience */
+    #experience {
+        padding-bottom: 89px;
+    }
+    #experience .exC1 {
+        right: auto; left: 50%; top: 467px;
+        margin-left: -321px;
+    }
+    #experience .exC2 {
+        right: auto; left: 50%; top: 735px;
+        width: 220px; height: 220px; margin-left: -449px;
+    }
+    #experience .leftbg {
+        width: 24.902%; margin-top: -355px;
+    }
+    #experience .leftbg .title {
+        width: 160px; height: 130px; padding-top: 0;
+    }
+    .exInner {
+        position: relative;
+    }
+    .exInner h2 {
+        position: absolute; left: 0; top: 275px; z-index: 1; margin-left: 0;
+        font-size: 8rem;
+    }
+    .exInner iframe {
+        float: right;
+        width: 69.444%;height: 337px; margin-bottom: 190px;
+    }
+    .exInner .exText {
+        clear: both;
+        float: right;
+        width: 50%;
+    }
+    .exInner .exText p {
+        margin-bottom: 41px;
+    }
+    .exInner > span {
+        float: left;
+        width: 45.949%; height: 380px;
+    }
+    /* book */
+    #book {
+        padding: 85px 0 97px;
+    }
+    .bookInner .title {
+        top: -150px;
+        width: 160px; height: 130px;
+    }
+    .bookInner h2 {
+        margin-bottom: 74px;
+        font-size: 8rem;
+    }
+    .bookInner > span {
+        float: left;
+        width: 45.949%;height: 435px; padding-top: 14px; margin-bottom: 93px;
+    }
+    .bookInner > span span {
+        width: 92.695%; height: 409px;
+    }
+    .bookInner .bookText {
+        float: right; margin-bottom: 0;
+        width: 50%;
+    }
+    .bookInner form {
+        clear: both;
+    }
+    .table {
+        display: table; width: 100%;
+    }
+    .table .mobile {
+        display: none;
+    }
+    .table-head {
+        display: table-header-group; 
+        position: static;
+        text-align: center;
+    }
+    .table .row {
+        display: table-row;
+    }
+    .table .cell {
+        display: table-cell; padding: 10px;
+        border-right: 1px solid #dcd8cf;
+        border-bottom: 1px solid #dcd8cf;
+    }
+    .cell:first-of-type {
+        width: 95.139%;
+    }
+    .cell:nth-of-type(2) {
+        width: 4.861%; border-right: none;
+    }
+    .table .row:last-of-type .cell {
+        border-bottom: none;
+    }
+    .table label span {
+        display: inline-block;
+    }
+    .table label span span:nth-child(2) {
+        display: inline-block;
+    }
+    .select1 .table label span span:nth-child(2) span {
+        color: #554999;
+    }
+    .table input {
+        display: block;
+        position: static; 
+        width: 16px; height: 16px; margin-top: 0; margin-left: 35.715%;
+    }
+    /* custom */
+    .cuC1 {
+        top: -431px;
+        width: 862px; height: 862px; margin-left: -431px;
+    }
+    .cuC2 {
+        top: 109px;
+        width: 230px; height: 230px; margin-left: -488px;
+    }
+    .customInner {
+        margin-bottom: 75px;
+    }
+    .customInner .title {
+        width: 160px; height: 130px; margin-top: 85px; margin-right: 40px;
+    }
+    .customInner h2 {
+        padding-top: 124px; margin-bottom: 85px;
+        font-size: 8rem;
+    }
+    .customInner p {
+        margin-bottom: 20px;
+    }
+    .customInner a {
+        margin-bottom: 45px;
+    }
+}
+@media screen and (min-width:1280px) {
+    #lab {
+        padding-bottom: 234px;
+    }
+    #lab .pc {
+        right: 50%;
+        width: 600px; height: 884px; margin-right: -960px; transition: all 0.4s ease;
+    }
+    #lab .labC1 {
+        left: 50%; top: -345px;
+        width: 1036px; height: 1036px; margin-left: -1135px;
+    }
+    .labInner {
+        width: 1280px;
+    }
+    .labInner h2 {
+        padding-top: 119px; margin-bottom: 85px;
+        font-size: 16rem;
+    }
+    .labInner > div {
+        height: 400px; padding: 19px;
+    }
+    .labInner > div > span {
+        width: 46px; height: 46px; border-width: 2px;
+    }
+    .labInner > div > div {
+        border-width: 2px; 
+    }
+    .labInner div h3 {
+        padding-top: 80px; margin-bottom: 46px;
+        font-size: 3rem;
+    }
+    .labInner div p {
+        width: 990px; padding-bottom: 80px;
+        font-size: 2.4rem; line-height: 1.25;
+    }
+    /* experience */
+    #experience {
+        padding-bottom: 116px;
+    }
+    #experience .exC1 {
+        top: 514px;
+        width: 842px; height: 842px; margin-left: -598px;   
+    }
+    #experience .exC2 {
+        top: 935px;
+        width: 336px; height: 336px; margin-left: -776px;
+    }
+    #experience .leftbg {
+        left: 50%;
+        width: 553px; height: 619px; margin-left: -960px; margin-top: -438px;
+    }
+    #experience .leftbg .title {
+        left: auto;
+        width: 210px; height: 180px;
+    }
+    .exInner {
+        width: 1280px;
+    }
+    .exInner h2 {
+        top: 405px;
+        font-size: 11rem; line-height: 1.091;
+    }
+    .exInner iframe {
+        width: 854px; height: 480px; margin-bottom: 224px;
+    }
+    .exInner .exText p {
+        margin-bottom: 50px;
+        font-size: 2.4rem; line-height: 1.25;
+    }
+    .exInner .exText a {
+        font-size: 2.4rem; line-height: 1.25;
+    }
+    .exInner .exText span {
+        width: 10px; height: 18px; margin-right: 25px;
+    }
+    .exInner > span {
+        width: 580px; height: 387px;
+    }
+    /* book */
+    #book {
+        padding: 107px 0 100px;
+    }
+    .bookInner {
+        width: 1280px;
+    }
+    .bookInner .title {
+        top: -194px;
+        width: 210px; height: 180px;
+    }
+    .bookInner h2 {
+        margin-bottom: 87px;
+        font-size: 11rem;
+    }
+    .bookInner > span { 
+        width: 550px; height: 482px; padding-top: 20px; margin-bottom: 81px;
+    }
+    .bookInner > span span {
+        width: 510px; height: 442px; border-width: 2px;
+    }
+    .bookInner .bookText h3 {
+        margin-bottom: 45px;
+        font-size: 3.6rem;
+    }
+    .bookInner .bookText p {
+        font-size: 2.4rem; line-height: 1.25;
+    }
+    .bookInner .bookText p:first-of-type {
+        margin-bottom: 60px;
+    }
+    .select1 {
+        margin-bottom: 80px;
+    }
+    .select2 {
+        margin-bottom: 82px;
+    }
+    .select1 h3, .select2 h3 {
+        font-size: 3.6rem;
+    }
+    .table-head .cell {
+        font-size: 2.8rem;
+    }
+    .table .cell {
+        font-size: 2.4rem; padding: 20px;
+    }
+    fieldset > input {
+        width: 240px; height: 64px; border-width: 2px;
+        font-size: 2.4rem; 
+    }
+    /* custom */
+    .cuC1 {
+        top: -730px;
+        width: 1260px; height: 1260px; margin-left: -630px;
+    }
+    .cuC2 {
+        top: 136px;
+        width: 334px; height: 334px; margin-left: -723px;
+    }
+    .customInner {
+        width: 1280px;
+    }
+    .customInner .title {
+        width: 210px; height: 180px; margin-top: 117px; margin-right: 55px;
+    }
+    .customInner h2 {
+        padding-top: 164px; margin-bottom: 80px; 
+        font-size: 11rem;
+    }
+    .customInner p {
+        font-size: 2.4rem; line-height: 1.25; 
+    }
+    .customInner a {
+        width: 240px; height: 64px; 
+        font-size: 2.4rem;  line-height: 64px;
+    }
+    .customInner span {
+        height: 400px;
+    }
+}
+
+/* contact */
+/* animation */
+@-webkit-keyframes up2 {
+    0% {
+        -webkit-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.enInner .pcinner > h2.left, #contact > .pc:nth-child(2).left, .conInner h2.left, .stInner h2.left {
+    -webkit-animation: left 1.5s ease;
+    animation: left 1.5s ease;
+}
+#contact > .pc:first-child.right, .conInner p:nth-of-type(2).right, .conInner p:nth-of-type(3).right {
+    -webkit-animation: right 1.5s;
+    animation: right 1.5s;
+}
+.conInner p:nth-of-type(1).up  {
+    -webkit-animation: up 1.5s;
+    animation: up 1.5s;
+}
+.enInner fieldset > input.up2, .conInner p:nth-of-type(1).up2 {
+    -webkit-animation: up2 1.5s;
+    animation: up2 1.5s;
+}
+.enInner form div:nth-child(1).up2 {
+     -webkit-animation: up2 0.4s;
+    animation: up2 0.4s;
+}
+.enInner form div:nth-child(2).up2 {
+     -webkit-animation: up2 0.4s;
+    animation: up2 0.6s;
+}
+.enInner form div:nth-child(3).up2 {
+     -webkit-animation: up2 0.4s;
+    animation: up2 0.8s;
+}
+.enInner form div:nth-child(4).up2 {
+     -webkit-animation: up2 0.4s;
+    animation: up2 1s;
+}
+.enInner form div:nth-child(5).up2 {
+     -webkit-animation: up2 0.4s;
+    animation: up2 1.2s;
+}
+.stInner .pcinner > div:nth-child(odd).move {
+    -webkit-animation: left 1.5s ease;
+    animation: left 1.5s ease;
+}
+.stInner .pcinner > div:nth-child(even).move {
+    -webkit-animation: right 1.5s;
+    animation: right 1.5s;
+}
+.enInner form.op, .conInner p.op, .conInner h2.op, .stInner h2.op {
+    -webkit-animation: op 1s ease;
+    animation: op 1s ease;
+}
+.conInner p:nth-of-type(3) a span.line {
+    -webkit-animation: line 1s ease;
+    animation: line 1s ease;
+}
+
+/* cont */
+.sectionWrap {
+    padding-top: 80px; overflow-y: hidden;
+}
+#contact {
+    padding-bottom: 30px;
+    text-align: center; 
+}
+.conInner h2 {
+    height: 125px; padding-top: 56px; margin-bottom: 22px;
+    background: url(../img/sabon-contact-bg.jpg) no-repeat; background-size: cover; background-position: center; color: #fff; font-size: 6rem; font-weight: normal; font-family: Amiri, sans-serif;
+    transition: 0.4s;
+}
+.conInner a {
+    color: #2e261d;
+}
+.conInner p {
+    font-size: 1.8rem; color: #2e261d;
+}
+.conInner p:nth-of-type(2) {
+    margin-bottom: 18px;
+}
+.conInner p:nth-of-type(2) span:last-child {
+    color: #554999;
+}
+.conInner p:nth-of-type(2) span:last-child:after {
+    content: "-"; padding: 0 6px; color: #554999; 
+}
+.conInner p:nth-of-type(3) a {
+    display: inline-block;
+    color: #554999;
+}
+.conInner p:nth-of-type(3) a span {
+    display: block;
+    width: 100%; height: 1px;
+    background: #554999;
+}
+/* enquire */
+#enquire {
+    padding-bottom: 66px;
+}
+.enInner {
+    width: 80.267%; margin: 0 auto;
+}
+.enInner form div {
+    position: relative;
+    margin-bottom: 15px;
+}
+.enInner form div:last-of-type {
+    margin-bottom: 35px;
+}
+.enInner label, .enInner input, textarea {
+    display: block;
+}
+.enInner label {
+    position: absolute; left: 6px; top: 9px;
+    color: #2e261d; font-size: 1.8rem; opacity: 0.5;
+}
+.enInner input {
+    width: 100%; height: 36px; padding: 9px; border-top: none; border-right: none; border-left: none; border-bottom: 1px solid #d9b257; font-size: 1.8rem;
+}
+textarea {
+    width: 100%; height: 36px; padding: 9px; border-top: none; border-right: none; border-left: none; border-bottom: 1px solid #d9b257; font-size: 1.8rem;
+}
+.enInner fieldset > input {
+    display: block;
+    width: 130px; height: 40px; padding: 0; border: none;
+    background: #d9b257; color: #fff; line-height: 40px;
+}
+/* store */
+.stInner {
+    width: 80.267%; margin: 0 auto 62px;
+}
+.stInner h2 {
+    margin-bottom: 37px;
+    color: #2e261d; text-align: center; font-size: 4rem; font-weight: normal;
+}
+.stInner .pcinner > div {
+    margin-bottom: 15px;
+}
+.stInner .pcinner > div > a {
+    position: relative;
+    display: block;
+    width: 100%; padding: 15px 19.11% 15px 14px; 
+    background: #d9b257; color: #fff;
+}
+.stInner .pcinner span {
+    font-size: 1.8rem; line-height: 1.25;
+}
+.stInner .pcinner > div > a > span:first-child {
+    display: block;
+    margin-bottom: 13px;
+    font-size: 2rem;
+}
+.stInner .pcinner a span:nth-child(2) > span {
+    display: block;
+}
+.stInner .pcinner .icon {
+    display: block;
+    position: absolute; right: 15px; top: 50%;
+    width: 30px; height: 18px; margin-top: -9px;
+    background: url(../img/sabon-arrow-down-white.png) no-repeat; background-size: contain;
+}
+.stInner .pcinner > div.on .icon {
+    background-image: url(../img/sabon-arrow-up-white.png);
+}
+.stInner .pcinner .info {
+    display: none;
+    background: #fff; padding: 15px 14px; 
+    font-size: 1.8rem; line-height: 1.25;
+}
+.stInner .pcinner .info div {
+    padding-bottom: 8px; border-bottom: 1px solid #2e261d;
+}
+.stInner .pcinner .info div > span {
+    display: block; float: left;
+    width: 25px; height: 25px; margin-right: 10px; margin-top: 8px;
+    background: url(../img/sabon-icon-clock-brown.png) no-repeat; background-size: contain;
+}
+.stInner .pcinner .info div:nth-child(2) {
+    padding-top: 10px;
+}
+.stInner .pcinner .info div:nth-child(2) > span {
+    width: 26px;margin-top: 10px;
+    background-image: url(../img/sabon-icon-parking-brown.png);
+} 
+.stInner .pcinner .info p {
+    float: left;
+    width: 86.379%;color: #2e261d;
+}
+.stInner .pcinner .info p span {
+    display: block; 
+}
+.stInner .pcinner .info div:nth-child(3) {
+    border: none;padding-top: 10px;padding-bottom: 0;
+}
+.stInner .pcinner .info div:nth-child(3) > span {
+    width: 25px; 
+    background-image: url(../img/sabon-icon-map-brown.png);
+}
+.stInner .pcinner .info a {
+    display: inline-block; 
+    padding-top: 8px; border-bottom: 1px solid #2e261d;
+    color: #2e261d;
+}
+
+@media screen and (min-width:768px) {
+    .sectionWrap {
+        padding-top: 85px;
+    }
+    #contact {
+        margin-bottom: 84px;
+    }
+    .conInner h2 {
+        height: 259px; padding-top: 147px; margin-bottom: 39px;
+        font-size: 11rem;
+    }
+    .conInner p.pc {
+        display: block; margin-bottom: 36px; font-size: 2.4rem;
+    }
+    .conInner p {
+        font-size: 2.4rem;
+    }
+    .conInner p:nth-of-type(2) {
+        margin-bottom: 22px;
+    }
+    /* enquire */
+    #enquire {
+        padding-bottom: 132px;
+    }
+    .enInner {
+        width: 84.375%;
+    }
+    .enInner form div {
+        float: left; position: relative;
+        width: 48.457%; margin-right: 3.086%; margin-bottom: 45px; 
+    }
+    .enInner form div:nth-last-of-type(2n) {
+        margin-right: 0;
+    }
+    .enInner form div:last-of-type {
+        clear: both;
+        width: 100%; margin-bottom: 54px; margin-right: 0;
+    }
+    .enInner label {
+        font-size: 2rem; top: 12px; left: 12px;
+    }
+    .enInner input {
+        width: 100%;height: 44px; padding: 12px;font-size: 2rem;
+    }
+    .enInner form span {
+        position: absolute;left: 0; bottom: 0;
+        display: block;
+        width: 100%; height: 1px;
+        transition:  background 0.4s ease;
+    }
+    .enInner form div.on span {
+        background: #554999;
+    }
+    textarea {
+        height: 44px; padding: 12px;font-size: 2rem;
+    }
+    .enInner fieldset > input {
+        width: 150px; height: 50px;
+        font-size: 2rem; line-height: 50px;
+        transition: background 0.4s ease;
+    }
+    .enInner fieldset > input:hover {
+        background: #554999;
+    }
+    /* store */
+    .stInner {
+        width: 84.375%; margin-bottom: 90px;
+    }
+    .stInner h2 {
+        margin-bottom: 74px;
+        font-size: 8rem;
+    }
+    .stInner .pcinner > div {
+        margin-bottom: 30px; 
+    }
+    .stInner .pcinner > div > a{
+        padding: 24px 30.864% 24px 21px;
+        transition: background 0.4s ease;
+    }
+    .stInner .pcinner > div > a:hover {
+        background: #554999;
+    }
+    .stInner .pcinner > div > a > span:first-child {
+        margin-bottom: 22px;
+        font-size: 2.4rem;
+    }
+    .stInner .pcinner span {
+        font-size: 2.4rem;
+    }
+    .stInner .pcinner .icon {
+        right: 30px; 
+        width: auto; height:30px;
+        background: none;
+    }
+    .stInner .pcinner .icon span {
+        display: inline-block;
+        width: 30px; height: 100%; margin-right: 20px;
+        background: url(../img/sabon-icon-clock.png) no-repeat; background-size: contain;
+    }
+    .stInner .pcinner .icon span:nth-child(2) {
+        width: 31px;
+        background-image: url(../img/sabon-icon-parking.png);
+    }
+    .stInner .pcinner .icon span:nth-child(3) {
+        width: 22px; margin-right: 0;
+        background-image: url(../img/sabon-icon-map.png);
+    }
+    .stInner .pcinner .info {
+        padding: 24px 21px;
+        font-size: 2.4rem;
+    }
+    .stInner .pcinner .info div {
+        padding-bottom: 24px;
+    }
+    .stInner .pcinner .info div > span {
+        width: 30px; height: 30px; margin-right: 25px; margin-top: 15px;
+    }
+    .stInner .pcinner .info div:nth-child(2) {
+        padding-top: 24px;
+    }
+    .stInner .pcinner .info div:nth-child(2) > span {
+        width: 31px; margin-top: 0;
+    }
+    .stInner .pcinner .info div:nth-child(3) {
+        padding-top: 24px; 
+    }
+    .stInner .pcinner .info div:nth-child(3) > span {
+        margin-top: 0;
+    }
+    .stInner .pcinner .info a {
+        padding-top: 0;
+    }
+    .stInner .pcinner .info a:hover {
+        color: #554999;
+    }
+}
+@media screen and (min-width:1024px) {
+    #contact {
+        position: relative; margin-bottom: 208px;
+    }
+    #contact > .pc:first-child:before {
+        content: ""; display: block; position: fixed;left: 0; top: 85px;
+        width: 24.414%; height: 100vh;
+        background: rgba(0,0,0,.2);
+    }
+    #contact > .pc:first-child {
+        position: fixed; left: 0; top: 85px;
+        width: 24.414%; height: 100vh;
+        background: url(../img/sabon-contact-leftbg.jpg) no-repeat;background-size: cover; background-position: left -100px top;
+        transition: 0.3s;
+    }
+    #contact > .pc:nth-child(2) {
+        position: fixed; top: 50%; left: 7.813%; z-index: 1;
+        display: block;
+        width: 258px; height: 370px; padding-top: 15px; margin-top: -185px;
+        background: url(../img/sabon-contact-bg.jpg) no-repeat; background-size: cover; background-position: center;
+        transition: width 0.3s;
+    }
+    #contact > .pc:nth-child(2) span {
+        display: block;
+        width: 230px; height: 340px; border: 2px solid #fff; margin: 0 auto;
+    }
+    #contact .conC1 {
+        position: absolute; top: -182px; right: -192px;z-index: -2;
+        width: 451px; height: 451px;
+    }
+    #contact .conC2 {
+        position: absolute; top: 198px; right: -362px; z-index: -1;
+        width: 756px; height: 756px;
+    }
+    #contact .conC3 {
+        position: absolute; top: 849px; right: -26px;z-index: -2;
+        width: 372px; height: 372px;
+    }
+    .conInner {
+        width: 84.375%; margin: 0 auto;
+    }
+    .conInner .pcinner {
+        width: 60.88%; float: right;
+    }
+    .conInner h2 {
+        height: auto; padding-top: 108px; margin-bottom: 96px;
+        background: none;
+        color: #c6a456; 
+    }
+    .conInner p.pc {
+        margin-bottom: 90px; font-size: 3rem;
+    }
+    .conInner p {
+        font-size: 2.8rem; text-align: left; line-height: 1.25;
+    }
+    .conInner p span {
+        display: block;
+    }
+    .conInner p .pc:first-child {
+        float: left;
+        width: 70px; height: 70px; margin-right: 36px;
+        background: url(../img/sabon-icon-tel.png) no-repeat; background-size: contain;
+    }
+    .conInner p:nth-of-type(3) .pc:first-child {
+        background-image: url(../img/sabon-icon-email.png);
+    }
+    .conInner p span:nth-child(2) {
+        color: #d9b257;
+    }
+    .conInner p:nth-of-type(2) {
+        margin-bottom: 38px;
+    }
+    .conInner p:nth-of-type(2) span:last-child {
+        color: #d9b257;
+    }
+    .conInner p:nth-of-type(2) span:last-child:after {
+        content: none;
+    }
+    .conInner p:nth-of-type(3) a {
+        color: #2e261d;
+    }
+    .conInner p:nth-of-type(3) a span {
+        background: #2e261d;
+    }
+    /* enquire */
+    #enquire {
+        padding-bottom: 112px;
+    }
+    .enInner .pcinner {
+        width: 60.88%; float: right;
+    }
+    .enInner .pcinner > h2 {
+        display: block; margin-bottom: 68px;text-align: center;
+        color: #2e261d; font-size: 8rem; font-weight: normal;
+    }
+    .enInner form div {
+        width: 48.479%; margin-right: 3.042%; margin-bottom: 50px;
+    }
+    .enInner form div:last-of-type {
+        margin-bottom: 60px;
+    }
+    .enInner input {
+        border-width: 2px;
+    }
+    textarea {
+        height: 88px;border-width: 2px;
+    }
+    /* store */
+    #store {
+        position: relative;
+    }
+    #store .stC1 {
+        position: absolute; right: -78px; bottom: 290px;z-index: -1;
+        width: 298px; height: 298px;
+    }
+    #store .stC2 {
+        position: absolute; right: -110px; bottom: -197px; z-index: -2;
+        width: 576px; height: 576px;
+    }
+    .stInner {
+        margin-bottom: 100px;
+    }
+    .stInner .pcinner {
+        width: 60.88%; float: right;
+    }
+    .stInner h2 {
+        margin-bottom: 76px;
+    }
+    .stInner .pcinner > a {
+        padding-right: 31.749%;
+    }
+    footer {
+        position: relative; z-index: 1;
+    }
+}
+@media screen and (min-width:1280px) {
+    #contact {
+        margin-bottom: 234px;
+    }
+    #contact > .pc:first-child:before {
+        left: 50%;
+        width: 600px; margin-left: -960px;
+    }
+    #contact > .pc:first-child {
+        left: 50%;
+        width: 600px; margin-left: -960px;
+        background-position: center;
+    }
+    #contact > .pc:nth-child(2) {
+        left: 50%; padding-top: 20px;
+        width: 360px; height: 502px; margin-left: -599px; margin-top: -251px;
+    }
+    #contact > .pc:nth-child(2) span {
+        width: 320px; height: 462px;
+    }
+    #contact .conC1 {
+        right: -118px; top: -183px;
+        width: 558px; height: 558px;
+    }
+    #contact .conC2 {
+        right: -282px; top: 299px;
+        width: 936px; height: 936px;
+    }
+    #contact .conC3 {
+        top: 1103px; right: 128px;
+        width: 451px; height: 451px;
+    }
+    .conInner {
+        width: 1280px;
+    }
+    .conInner .pcinner {
+        width: 728px;
+    }
+    .conInner h2 {
+        margin-bottom: 102px; padding-top: 138px;
+        font-size: 16rem;
+    }
+    .conInner p.pc {
+        margin-bottom: 70px;
+        font-size: 4rem;
+    }
+    .conInner p {
+        font-size: 3.6rem;
+    }
+    .conInner p .pc:first-child {
+        width: 79px; height: 80px; margin-right: 40px;
+    }
+    .conInner p:nth-of-type(2) {
+        margin-bottom: 65px;
+    }
+    /* enquire */
+    #enquire {
+        padding-bottom: 123px;
+    }
+    .enInner {
+        width: 1280px;
+    }
+    .enInner .pcinner {
+        width: 728px;
+    }
+    .enInner .pcinner > h2 {
+        margin-bottom: 113px;
+        font-size: 10rem;
+    }
+    .enInner form div {
+        width: 354px; margin-right: 20px; margin-bottom: 53px;
+    }
+    .enInner form div:last-of-type {
+        margin-bottom: 67px;
+    }
+    .enInner label {
+        font-size: 2.4rem;
+    }
+    .enInner input {
+        height: 48px; font-size: 2.4rem; 
+    }
+    textarea {
+        height: 96px; font-size: 2.4rem;
+    }
+    .enInner fieldset > input {
+        width: 160px; height: 60px;
+        font-size: 2.4rem; line-height: 60px;
+    }
+    /* store */
+    #store .stC1 {
+        bottom: 440px; right: -199px;
+        width: 440px; height: 440px;
+    }
+    #store .stC2 {
+        right: -199px; bottom: -256px;
+        width: 842px; height: 842px;
+    }
+    .stInner {
+        width: 1280px; margin-bottom: 120px;
+    }
+    .stInner .pcinner {
+        width: 728px;
+    }
+    .stInner h2 {
+        margin-bottom: 91px;
+        font-size: 10rem;
+    }
+    .stInner .pcinner > div {
+        margin-bottom: 35px;
+    }
+    .stInner .pcinner > div > a {
+        padding: 25px 250px 25px 31px; 
+    }
+    .stInner .pcinner span {
+        font-size: 2.8rem;
+    }
+    .stInner .pcinner > div > a > span:first-child {
+        font-size: 3rem; margin-bottom: 21px;
+    }
+    .stInner .pcinner .icon {
+        right: 35px;
+        height: 35px;
+    }
+    .stInner .pcinner .icon span {
+        width: 35px; margin-right: 30px;
+    }
+    .stInner .pcinner .icon span:nth-child(2) {
+        width: 36px;
+    }
+    .stInner .pcinner .icon span:nth-child(3) {
+        width: 25px;
+    }
+    .stInner .pcinner .info {
+        font-size: 2.8rem; padding: 25px 31px;
+    }
+    .stInner .pcinner .info div {
+        padding-bottom: 31px;
+    }
+    .stInner .pcinner .info div > span {
+        width: 35px; height: 35px; margin-right: 25px; margin-top: 17px;
+    }
+    .stInner .pcinner .info div:nth-child(2), .stInner .pcinner .info div:nth-child(3) {
+        padding-top: 31px;
+    }
+    .stInner .pcinner .info div:nth-child(2) > span {
+        width: 36px;
+    }
+}
