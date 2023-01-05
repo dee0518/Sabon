@@ -17,7 +17,7 @@ https://dee0518.github.io/Sabon/
 
 모바일 퍼스트로 진행했으며 주석으로 어떤 section인지 표기하는 컨벤션으로 코드 작성.
 
-```
+```css
 /* .navWrap */
 .navWrap {
     position: fixed; left: 0; top: 0; z-index: 2;
